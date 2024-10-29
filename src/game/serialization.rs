@@ -100,7 +100,7 @@ impl PostFlopGame {
     }
 }
 
-static VERSION_STR: &str = "2023-03-19";
+static VERSION_STR: &str = "2024-10-26";
 
 thread_local! {
     static PTR_BASE: Cell<[*const u8; 2]> = Cell::new([ptr::null(); 2]);
