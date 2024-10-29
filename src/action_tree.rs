@@ -97,6 +97,9 @@ pub struct TreeConfig {
     /// Rake cap. Must be non-negative.
     pub rake_cap: f64,
 
+    /// Bubble Factor. value `0.0` is not allowed. used by "fn evaluate_internal" or "fn evaluate_internal_bunching". [0]oop [1]ip 
+    pub bubble_factor: [f64; 2],
+
     /// Bet size options of each player for the flop.
     pub flop_bet_sizes: [BetSizeOptions; 2],
 
