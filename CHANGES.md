@@ -1,5 +1,11 @@
 # List of breaking changes
 
+##
+
+- struct `TreeConfig` : new field `pub bubble_factor: [f64; 2]` are added. If you want to calculate the chip EV, you need to use "[1.0, 1.0]". "[0]" as OOP and "[1]" as IP.
+- function `evaluate_internal` and `evaluate_internal_bunching` : Use “bubble_factor” when calculating “amount_win”.
+- lost savedata compatibility betweeh this fork and others due to `TreeConfig` was changed.
+
 ## 2023-10-01
 
 - `BetSizeCandidates` and `DonkSizeCandidates` are renamed to `BetSizeOptions` and `DonkSizeOptions`, respectively.
